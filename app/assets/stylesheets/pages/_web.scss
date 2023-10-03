@@ -25,3 +25,13 @@
 #list {
   list-style-type: none;
 }
+
+#link {
+  text-decoration: none;
+  color: #06befc;
+
+  &:hover {
+    color: #010506;
+    overflow: hidden;
+  }
+}
