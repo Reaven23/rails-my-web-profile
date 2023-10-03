@@ -1,11 +1,79 @@
 <div class="main-container">
   <%= render 'navbar', class:"sticky" %>
   <div class="presentation container">
-    <h2>WELCOME TO MY WORLD</h2>
-    <p id="introduction">Adrien, anciennement professeur d'anglais dans les rangs de l'éducation nationale, j'ai démissionné pour commencer une nouvelle vie dans le développement Web. Vous trouverez mes projets Webs personnels et professionnels dans la partie projet et pour ceux qui veulent encore progresser en anglais, vous pouvez aller faire un tour sur English is Facile. </p>
+    <h1>WELCOME TO MY WORLD</h1>
+    <p id="introduction">Adrien, anciennement professeur d'anglais dans les rangs de l'éducation nationale, j'ai démissionné pour commencer une nouvelle vie dans le développement Web. Vous trouverez mes projets Web personnels et professionnels dans la partie projet et pour ceux qui veulent encore progresser en anglais, vous pouvez aller faire un tour sur English is Facile. </p>
   </div>
+
   <div class="photo-prez">
     <%= image_tag("adrien.jpg", width: 250, class: "photo-home") %>
   </div>
+
+  <div class="about container-sm">
+    <h2>ABOUT ME</h2>
+    <div class="row mt-3">
+
+        <div class="card-product card-style col">
+          <%= image_tag("coding.jpg", class: "") %>
+          <div>
+            <h2>Code</h2>
+            <p>Ce n'est que très récemment que je me suis découvert une nouvelle passion pour le développement Web. Toujours été très curieux de passer un coup d'oeil dans les coulisses des internets et c'est avec plaisir et grace au @Wagon Paris que j'ai pu m'y initier et développer un sacré penchant pour le développement Back End. J'aime bien le front, mais je dois dire que le back aura eu mon petit ❤️ first. </p>
+          </div>
+        </div>
+
+
+
+        <div class="card-product card-style col">
+          <%= image_tag("english.jpg", class: "") %>
+          <div>
+            <h2>English</h2>
+            <p>Et Yes, English has always been my thing. Toujours eu une âme de globe-trotteur mais l'anglais c'est surtout la possibilité d'échanger avec presque n'importe qui sur cette planète, découvrir de nouvelles cultures, d'autres façon de vivre et d'aller vers l'autre ; l'autre au sens large. Et surtout, un gros crush pour l'Irlande 💚🤍🧡, pays dans lequel j'ai vécu et qu'il a été très dur de quitter. Irish craic! </p>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="card-product card-style col">
+          <%= image_tag("teaching.jpg", class: "") %>
+          <div>
+            <h2>Enseignement</h2>
+            <p>Un petit truc pour la transmission, ça a touujours été. Dix ans de carrière à l'éducation nationale, mais ce n'est pas ce qui compte. J'ai commencé à entrainer des équipes de basket de pioupious à 15 ans, j'ai accompagné des gamins en tant qu'animateur, formé des futurs animateurs, des étudiants. Et finalement enseigner c'est échanger, c'est nourir une curiosité, continuer d'apprendre et s'ouvrir au monde. Teaching passion here! 🧑‍🏫</p>
+          </div>
+        </div>
+
+
+
+        <div class="card-product card-style col">
+          <%= image_tag("reading.jpg", class: "") %>
+          <div>
+            <h2>Lecture</h2>
+            <p>Lire et enseigner la littérature, another one of my things. Bon j'ai beaucoup de passion en vrai, I know. Mais lire, c'est encore une fois s'ouvrir au monde et des univers qu'on ne connait pas. C'est s'enrichir de l'histoire commune mais aussi de l'histoire des autres et de l'autre. Allez, je vous laisse avec un petit bouquin. 📖 "The Brooklyn Follies", Paul Auster 📖</p>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="card-product card-style col">
+          <%= image_tag("basketball.jpg", class: "") %>
+          <div>
+            <h2>Basketball</h2>
+            <p>Surement la plus grosse partie de mon monde, le basket c'est en quelques chiffres, 26 année en tant que joueur and still counting, 18 années en tant que coach, des milliers de matchs joués, des milliers de matchs coachés et un nombre de rencontres qui ne peut même pas être quantifié, coéquipiers, collègues entraineurs, les coachs qui m'ont entrainé, mes joueurs, parents de joueurs, arbitres, adversaires... 🏀🏀</p>
+          </div>
+        </div>
+
+
+
+        <div class="card-product card-style col">
+          <%= image_tag("guitar.jpg", class: "") %>
+          <div>
+            <h2>Musique</h2>
+            <p>Et pour finir, parce qu'il faut bien finir et que je pourrai encore rajouter mille et une choses, la musique, sous toute ses formes. En écouter, en jouer, en partager, en collectionner même. Rapporter un petit instrument de chaque pays visité et vous finissez avec un magasin de musique à la maison. 🎸🎺🎹🪕🥁🎶</p>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
   <%= render 'footer' %>
 </div>
