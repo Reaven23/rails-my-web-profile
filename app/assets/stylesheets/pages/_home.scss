@@ -1,5 +1,5 @@
 .photo-prez {
-  margin-top: 10%;
+  margin-top: 2rem;
   justify-content: center;
   align-content: center;
   height: max-content;
@@ -8,4 +8,17 @@
 
 .photo-home {
   border-radius: 50%;
+}
+
+.presentation {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#introduction {
+  margin-top: 2rem;
+}
+
+.main-container {
+  min-height: 100vh;
 }

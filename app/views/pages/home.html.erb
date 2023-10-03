@@ -1,5 +1,11 @@
-<%= render 'navbar' %>
-<div class="photo-prez">
-  <%= image_tag("adrien.jpg", width: 200, class: "photo-home") %>
+<div class="main-container">
+  <%= render 'navbar', class:"sticky" %>
+  <div class="presentation container">
+    <h2>WELCOME TO MY WORLD</h2>
+    <p id="introduction">Adrien, anciennement professeur d'anglais dans les rangs de l'éducation nationale, j'ai démissionné pour commencer une nouvelle vie dans le développement Web. Vous trouverez mes projets Webs personnels et professionnels dans la partie projet et pour ceux qui veulent encore progresser en anglais, vous pouvez aller faire un tour sur English is Facile. </p>
+  </div>
+  <div class="photo-prez">
+    <%= image_tag("adrien.jpg", width: 250, class: "photo-home") %>
+  </div>
+  <%= render 'footer' %>
 </div>
-<%= render 'footer' %>
