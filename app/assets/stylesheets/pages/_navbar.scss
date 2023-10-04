@@ -5,9 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   min-height: 6vh;
   font-family: Hack, monospace;
+  position: relative;
+  z-index: 1
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 div {
@@ -20,6 +26,8 @@ nav {
   margin: 0px;
   background: #f9f9f9;
   padding: 12px;
+
+
   .menuItems {
     list-style: none;
     display: flex;
@@ -44,9 +52,4 @@ nav {
       }
     }
   }
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
