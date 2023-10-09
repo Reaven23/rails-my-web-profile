@@ -1,9 +1,5 @@
 class User < ApplicationRecord
-  enum role: [:user, :admin, :teacher, :learner]
-
-  def set_default_role
-    self.role ||= :user
-  end
+  enum status: { admin: 0, teacher: 1, learner: 2, user: 3 }
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
