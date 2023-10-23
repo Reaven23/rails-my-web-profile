@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  enum status: { admin: 0, teacher: 1, learner: 2, user: 3 }
-
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 end
