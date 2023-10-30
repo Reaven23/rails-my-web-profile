@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def projet_web
+  end
 end
