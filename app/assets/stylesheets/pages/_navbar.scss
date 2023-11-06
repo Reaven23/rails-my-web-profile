@@ -1,55 +1,83 @@
-
-
-
 .navbar-flow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 6vh;
-  font-family: Hack, monospace;
-  position: relative;
-  z-index: 1
+  background-color: rgb(254, 252, 252);
+  height: 100px;
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-}
-
-div {
-  color: #727272;
-  text-align: center;
-}
-
-
-nav {
-  margin: 0px;
-  background: #f9f9f9;
-  padding: 12px;
-
-
-  .menuItems {
-    list-style: none;
-    display: flex;
-
-    li {
-      margin: 20px;
-
-      a {
-        text-decoration: none;
-        color: #8f8f8f;
-        font-size: 24px;
-        font-weight: 400;
-        transition: all 0.5s ease-in-out;
-        position: relative;
-        text-transform: uppercase;
-
-        &:hover {
-          transition: 0.5s;
-          color: #06befc;
-          overflow: hidden;
-        }
-      }
-    }
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .navbar-flow {
+    height: 50px;
   }
+}
+
+.menuItems {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media (max-width: 1400px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .menuItems {
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .menuItems {
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .menuItems {
+    justify-content: space-around;
+    padding: 0px;
+  }
+}
+
+
+.nav-link a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .nav-link a {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .nav-link a {
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+
+
+.nav-link a:hover {
+  transition: 0.5s;
+  color: #06befc;
+  overflow: hidden;
 }
