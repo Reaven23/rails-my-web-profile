@@ -19,14 +19,87 @@
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid black;
+  margin-top: 3rem;
 }
 
 .welcome h4 {
   margin-bottom: 2rem;
 }
 
-.services {
-  display: flex;
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  gap: 18px;
+  place-self: center;
+}
+
+@media (max-width: 800px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .services-container {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  gap: 18px;
+  place-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .services-container {
+    display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3rem;
+  gap: 26px;
+  place-self: center;
+  }
+}
+
+.card-services {
+  backdrop-filter: blur(2px) saturate(165%);
+  -webkit-backdrop-filter: blur(2px) saturate(165%);
+  background-color: rgba(218, 248, 255, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  width: 230px;
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.card-services h2 {
+  font-size: 28px;
+}
+
+@media (max-width: 800px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .card-services {
+    height: 200px;
+  }
+
+  .card-services h2 {
+    font-size: 28px;
+  }
+
+  .card-services .service-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .card-services {
+    height: 150px;
+  }
+
+  .card-services h2 {
+    font-size: 20px;
+  }
+
+  .card-services .service-description {
+    font-size: 12px;
+  }
 }
 
 // .photo-prez {
