@@ -1,76 +1,105 @@
-.photo-prez {
-  margin-top: 2rem;
-  justify-content: center;
-  align-content: center;
-  height: max-content;
-  margin-bottom: 2rem;
-
-
+.landing-div {
+  height: 100vh;
+  width: auto;
+  background-image: url('pinetrees.jpg');
+  background-size: cover;
 }
 
-.photo-home {
-  border-radius: 50%;
-  box-shadow: rgba(55, 207, 241, 0.271) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(8, 56, 104, 0.35) 0px -2px 6px 0px inset;
-}
-
-.presentation {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-#introduction {
-  margin-top: 2rem;
-}
-
-.main-container {
-  min-height: 100vh;
-}
-
-.about {
+.container-landing {
+  display:flex;
+  flex-direction: column;
+  height: auto;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   justify-content: center;
 }
 
-.card-product {
-  overflow: hidden;
-  height: 200px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.welcome {
   display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex-direction: column;
+  border-bottom: 2px solid black;
 }
 
-.card-product img {
-  height: 80%;
-  width: 160px;
-  object-fit: cover;
-  border-radius: 50%;
+.welcome h4 {
+  margin-bottom: 2rem;
 }
 
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.services {
+  display: flex;
 }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
+// .photo-prez {
+//   margin-top: 2rem;
+//   justify-content: center;
+//   align-content: center;
+//   height: max-content;
+//   margin-bottom: 2rem;
+// }
 
-.card-product .card-product-infos {
-  padding: 16px;
-}
+// .photo-home {
+//   border-radius: 50%;
+//   box-shadow: rgba(55, 207, 241, 0.271) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(8, 56, 104, 0.35) 0px -2px 6px 0px inset;
+// }
 
-.card-style {
-  backdrop-filter: blur(4px) saturate(169%);
-  -webkit-backdrop-filter: blur(4px) saturate(169%);
-  background-color: rgba(207, 241, 249, 0.221);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-}
+// .presentation {
+//   margin-top: 2rem;
+//   margin-bottom: 2rem;
+// }
+
+// #introduction {
+//   margin-top: 2rem;
+// }
+
+// .main-container {
+//   min-height: 100vh;
+// }
+
+// .about {
+//   justify-content: center;
+// }
+
+// .card-product {
+//   overflow: hidden;
+//   height: 200px;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   display: flex;
+//   align-items: center;
+//   margin-top: 1rem;
+//   margin-left: 1rem;
+//   margin-right: 1rem;
+// }
+
+// .card-product img {
+//   height: 80%;
+//   width: 160px;
+//   object-fit: cover;
+//   border-radius: 50%;
+// }
+
+// .card-product h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card-product p {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   opacity: .7;
+//   margin-bottom: 0;
+//   margin-top: 8px;
+// }
+
+// .card-product .card-product-infos {
+//   padding: 16px;
+// }
+
+// .card-style {
+//   backdrop-filter: blur(4px) saturate(169%);
+//   -webkit-backdrop-filter: blur(4px) saturate(169%);
+//   background-color: rgba(207, 241, 249, 0.221);
+//   border-radius: 12px;
+//   border: 1px solid rgba(209, 213, 219, 0.3);
+// }
