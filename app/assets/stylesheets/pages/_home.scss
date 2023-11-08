@@ -15,6 +15,24 @@
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container-landing {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container-landing {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -25,17 +43,60 @@
   p {
     font-family: 'Yatra One', cursive;
     font-size: 20px;
+    text-shadow: 0px 0px 0px rgb(180, 241, 244);
+    text-shadow: 1px 1px 1px rgb(52, 52, 52);
   }
 
   h1 {
     font-family: 'Yatra One', cursive;
     font-size: 58px;
     text-shadow: 0px 0px 0px rgb(180, 241, 244);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(52, 52, 52);
+
   }
 
   h4 {
     font-family: 'Yatra One', cursive;
+    text-shadow: 0px 0px 0px rgb(180, 241, 244);
+    text-shadow: 1px 1px 1px rgb(52, 52, 52);
+  }
+}
+
+@media (max-width: 800px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .welcome  {
+    margin-top: 3rem;
+  }
+
+  .welcome h1 {
+    font-size: 38px;
+  }
+
+  .welcome h4 {
+    font-size: 28px;
+  }
+
+  .welcome p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .welcome  {
+    margin-top: 1rem;
+  }
+
+  .welcome h1 {
+    font-size: 24px;
+  }
+
+  .welcome h4 {
+    font-size: 14px;
+  }
+
+  .welcome p {
+    font-size: 10px;
   }
 }
 
@@ -82,17 +143,25 @@
   width: 230px;
   text-align: center;
   padding: 8px;
+  padding-top: 14px;
   overflow: hidden;
 }
 
 .card-services h2 {
   font-size: 28px;
+  margin: 20px 0px 20px 0;
+  font-family: 'Yatra One', cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 0px rgb(180, 241, 244);
+  text-shadow: 1px 1px 1px rgb(52, 52, 52);
 }
+
+
 
 @media (max-width: 800px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .card-services {
-    height: 200px;
+    height: 240px;
   }
 
   .card-services h2 {
@@ -107,7 +176,7 @@
 @media (max-width: 500px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .card-services {
-    height: 150px;
+    height: 180px;
   }
 
   .card-services h2 {
