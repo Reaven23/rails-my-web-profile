@@ -1,6 +1,6 @@
 class NotifierMailer < ApplicationMailer
   default to: "ad.andforward@gmail.com",
-          from: "contact@your-domain"
+          from: "contact@adrien-regis.site"
 
   def simple_message(first_name, last_name, email, message)
     mail(
