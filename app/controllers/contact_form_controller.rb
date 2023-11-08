@@ -1,5 +1,4 @@
 class ContactFormController < ApplicationController
-
   def create
     @name = params[:contact_form][:name]
     @last_name = params[:contact_form][:last_name]
@@ -15,5 +14,4 @@ class ContactFormController < ApplicationController
       flash[:alert] = "An error occurred while sending the email. Please try again later."
     end
   end
-
 end
