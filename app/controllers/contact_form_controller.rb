@@ -13,7 +13,6 @@ class ContactFormController < ApplicationController
       redirect_to :root
     rescue Errno::ECONNREFUSED => e
       flash[:alert] = "An error occurred while sending the email. Please try again later."
-      redirect_to :root
     end
   end
 
