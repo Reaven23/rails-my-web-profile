@@ -9,19 +9,25 @@
       </div>
       <div class="services-container">
         <div class="card-services">
+        <%= link_to projet_web_path, class: "card-link" do %>
           <div class="icon"><i class="fa-solid fa-computer fa-beat fa-lg" style="color: #06befc;"></i></div>
           <div class="service-title"><h2>Développement Web</h2></div>
           <div class="service-description"><p>Projet web complet, ajout de features, maintenance ou encore développement shopify. </p></div>
+        <% end %>
         </div>
         <div class="card-services">
+         <%= link_to english_path, class: "card-link" do %>
           <div class="icon"><i class="fa-solid fa-book fa-lg" style="color: #06befc;"></i></div>
           <div class="service-title"><h2>English skills</h2></div>
           <div class="service-description"><p>Anglais, outil de communication. Cours de conversation en groupe ou solo. Offres particuliers et entreprises.</p></div>
+        <% end %>
         </div>
         <div class="card-services">
+         <%= link_to web_path, class: "card-link" do %>
           <div class="icon"><i class="fa-solid fa-info fa-lg" style="color: #06befc;"></i></div>
           <div class="service-title"><h2>About me</h2></div>
           <div class="service-description">Découvrir mon univers en quelques lignes..</div>
+        <% end %>
         </div>
       </div>
     </div>

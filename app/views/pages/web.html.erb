@@ -1,70 +1,120 @@
 <div class="main-container">
   <%= render 'navbar', class:"sticky" %>
-  <div class="web-introduction container-sm">
-    <h1 class="mb-3">My Portfolio</h1>
-    <p> Et voilà une petite introduction sur mes projets web du moment. Vous trouverez ici des projets personnels et des projets plus professionnels. Pour la plupart, nous sommes sur des sites principalement codés sur via le Framework Ruby on Rails, la partie front utilise le trio classique de base, HTML / CSS / JS, en utilisant tout de même ERB pour HTML, SCSS pour CSS et Stimulus pour le framework Javascript. </p>
+  <div class="about-me-container">
+    <div class="left-div">
+      <h1 >About me</h1>
+      <div class="photo-prez">
+        <%= image_tag("adrien.jpg", width: 250, class: "photo-home") %>
+      </div>
+      <div class="button type--C">
+        <div class="button__line"></div>
+        <div class="button__line"></div>
+        <span class="button__text">Mes projets</span>
+        <div class="button__drow1"></div>
+        <div class="button__drow2"></div>
+      </div>
+    </div>
+    <div class="right-div">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('basketball.jpg') %>')">
+						<div class="inner">
+							<p>Basketball</p>
+              <span>Joueur et Entraineur</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>projet g ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('coding.jpg') %>')">
+						<div class="inner">
+							<p>Code</p>
+              <span>Programmation / les internets</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('reading.jpg') %>')">
+						<div class="inner">
+							<p>Lecture</p>
+              <span>Littérature and Co.</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('guitar.jpg') %>')">
+						<div class="inner">
+							<p>Musique</p>
+              <span>Overdosing Spotify</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('teaching.jpg') %>')">
+						<div class="inner">
+							<p>Enseignement</p>
+              <span>Apprendre, partager, transmettre</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container-card">
+					<div class="front" style="background-image: url('<%= asset_path('english.jpg') %>')">
+						<div class="inner">
+							<p>Anglais</p>
+              <span>Langue et Culture</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    </div>
   </div>
 
-  <div class="project mt-4 container-sm">
-    <h2>Hide N' Seek</h2>
-    <p class="mb-2"> Hide N' Seek est un projet qui a été réalisé par une équipe de quatre développeur en deux semaines dans le cadre d'une formation de développement Web Fullstack @Le Wagon. C'est une PWA (Progressive Web app) qui a été codé pour être utilisée sur un téléphone mobile. C'est une application de cache-cache dans la vraie vie. Par exemple, vous avez quinze minutes à tuer avant de prendre le train et que vous vous tournez les pouces? Apprenez à connaitre votre voisin de cabine en le cherchant dans la gare ! 😁😉 Une version plus complexe avec un concept un peu différent est en préparation chez Hide and Find ; événementiel, team building, BDE, stay put 👀, something is coming!</p>
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-      </div>
-
-      <div class="carousel-inner mt-4">
-        <div class="carousel-item active">
-          <%= image_tag("1.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("2.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("3.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("4.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("5.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("6.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-        <div class="carousel-item">
-          <%= image_tag("7.png", height: 350, class: "d-block w-80 px-16 bradius") %>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="stack">
-      <h3> Stack technique utilisé :</h3>
-      <ul id="list">
-        <li>Ruby on Rails / Ruby</li>
-        <li>HTML / CSS(SCSS) / JS(Stimulus)</li>
-        <li>Heroku</li>
-        <li>GIT / GitHub</li>
-      </ul>
-      <p>Voici le lien vers le répo GitHub : <a href="https://github.com/DonVarlooo/hide-n-seek" target="_blank" id="link">Hide and Seek</a></p>
-    </div>
-
+  <div class="portfolio" id="my-anchor-point">
   </div>
-
   <%= render 'footer' %>
 </div>
