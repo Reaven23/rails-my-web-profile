@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8px;
+
 }
 
 .photo-home {
@@ -188,7 +189,6 @@ font-family: 'Montserrat';
   .right-div {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 8px
   }
 
 }
