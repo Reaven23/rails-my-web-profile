@@ -188,11 +188,9 @@ font-family: 'Montserrat';
   .right-div {
     width: 100%;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 8px
   }
 
-  .col {
-    width: 100%;
-  }
 }
 
 /* Phone Styles */
