@@ -1,5 +1,5 @@
 .about-me-container {
-  height: calc(100vh - 160px);
+  height: calc(100vh - 100px);
   display: flex;
 }
 
@@ -16,14 +16,9 @@
     font-weight: 300;
   }
 
-  .btn-portfolio {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    background-color: #8dcdff;
-    padding: 16px 24px 16px 24px;
-    border-radius: 15px;
-  }
 }
+
+
 
 .right-div {
  width: 75%;
@@ -64,11 +59,12 @@
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
 	text-align: center;
+  text-justify: auto;
 	min-height: 240px;
 	height: auto;
 	border-radius: 10px;
 	color: #fff;
-	font-size: 1.5rem;
+	font-size: 16px;
 }
 
 
@@ -177,7 +173,37 @@ bottom: -.75rem;
 .front .inner span{
 color: rgba(255,255,255,0.7);
 font-family: 'Montserrat';
-font-weight: 300;
+}
+
+/* Tablet Styles */
+@media (max-width: 900px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .left-div {
+    width: 100%;
+  }
+
+  .right-div {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+/* Phone Styles */
+@media (max-width: 500px) {
+  .right-div {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
 
 
