@@ -32,5 +32,15 @@
 }
 
 .carousel-caption h1 {
+  backdrop-filter: blur(2px) saturate(165%);
+  -webkit-backdrop-filter: blur(2px) saturate(165%);
+  background-color: rgba(64, 64, 64, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(146, 229, 248, 0.3);
+  width: 450px;
+  padding: 8px;
+  overflow: hidden;
   font-size: 3em;
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
