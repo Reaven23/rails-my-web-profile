@@ -2,7 +2,7 @@
 
 .carousel-container {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(70vh);
   position: relative;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
 .carousel-caption {
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 70%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
@@ -43,4 +43,52 @@
   font-size: 3em;
   font-family: 'Montserrat';
   font-weight: 300;
+}
+
+.presentation-container {
+  height: calc(100vh - 100px);
+  padding-top: 28px;
+}
+
+.first-pitch {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  backdrop-filter: blur(2px) saturate(165%);
+  -webkit-backdrop-filter: blur(2px) saturate(165%);
+  background-color: rgba(64, 64, 64, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(146, 229, 248, 0.3);
+  padding: 8px;
+  overflow: hidden;
+
+  font-size: 3em;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  color: rgb(18, 18, 18);
+}
+
+
+.presentation-container {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  position: relative;
+  top: -100px; left: 80px;
+  width: 40%;
+  height: 300px;
+  border-radius: 5px;
+
+  h2 {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 4em;
+  }
+}
+
+.mesure {
+  color:#06BEFC;
+  font-family: 'Montserrat';
+  font-weight: 300;
+
 }

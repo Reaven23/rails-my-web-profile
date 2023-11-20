@@ -15,7 +15,7 @@ export default class extends Controller {
         this.index = 0;
       }
       this.showSlide();
-    }, 3000); // Change d'image toutes les 5 secondes, modifier au besoin
+    }, 3000); 
   }
 
   showSlide() {
