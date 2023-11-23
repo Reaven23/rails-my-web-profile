@@ -76,7 +76,7 @@
   position: relative;
   top: -100px; left: 80px;
   width: 40%;
-  height: 300px;
+  height: 280px;
   border-radius: 5px;
   padding: 12px;
 
@@ -85,7 +85,17 @@
     font-weight: 300;
     font-size: 4em;
     text-align: center;
+    margin-top: 15px;
   }
+
+  p {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+  }
+
 }
 
 .mesure {
