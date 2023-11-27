@@ -46,28 +46,11 @@
   font-weight: 300;
 }
 
-.presentation-container {
-  height: calc(100vh - 100px);
-  padding-top: 28px;
-}
+// .presentation-container {
+//   height: calc(100vh - 100px);
+//   padding-top: 28px;
+// }
 
-.first-pitch {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-  backdrop-filter: blur(2px) saturate(165%);
-  -webkit-backdrop-filter: blur(2px) saturate(165%);
-  background-color: rgba(64, 64, 64, 0.41);
-  border-radius: 12px;
-  border: 1px solid rgba(146, 229, 248, 0.3);
-  padding: 8px;
-  overflow: hidden;
-
-  font-size: 3em;
-  font-family: 'Montserrat';
-  font-weight: 300;
-  color: rgb(18, 18, 18);
-}
 
 
 .presentation-container {
@@ -106,16 +89,93 @@
 
 }
 
+@media (max-width: 1400px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: 50%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: 50%;
+    height: 350px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (max-width: 950px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: 50%;
+    height: 280px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .informations {
+    width: 100%;
+    align-self: center;
+  }
+
+  .informations-container {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 850px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: auto;
+    height: auto;
+    position: initial;
+  }
+
+  .carousel-container {
+    height: fit-content;
+  }
+}
+
+
 ///////////////////////////////////////////////////////////////////////
 
 
 .container-info {
   display: flex;
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+@media (max-width: 1000px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container-info {
+   flex-direction: column;
+  }
 }
 
 .informations {
-  width: 90%;
-  margin-left: 2rem;
+  width: 100%;
+  align-self: center;
+  margin-right: 1rem;
 
   p {
     font-family: 'Montserrat';
@@ -125,26 +185,38 @@
   }
 }
 
-.contact-information {
-  margin-bottom: 40px;
+.informations-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
 }
 
-.contact-me {
+.contact-information {
+  display: flex;
+  margin-bottom: 40px;
+  width: 30%;
+  justify-content: center;
+  align-self: start;
   position: sticky;
   top: 110px;
+}
+
+
+.contact-me {
   background-color: #F1F1F1;
   border: solid #06BEFC 1px;
   border-radius: 15px;
   padding: 3rem;
   padding-right: 1rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+
 }
 
 .img-group-div {
   display: flex;
-  justify-content: end;;
+  justify-content: end;
 }
+
 .img-group {
   height: 230px;
   width: 400px;
@@ -155,7 +227,7 @@
 .offre {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   backdrop-filter: blur(2px) saturate(165%);
   -webkit-backdrop-filter: blur(2px) saturate(165%);
   background-color: #F1F1F1;
@@ -165,12 +237,142 @@
   font-family: 'Montserrat';
   font-weight: 300;
   text-align: justify;
-  
+
 
   .card-img {
     height: 230px;
     width: 400px;
     align-self: center;
 
+  }
+
+  .card-title {
+    align-self: center;
+    font-weight: 900;
+  }
+}
+
+.bold-characters {
+  color: rgb(72, 138, 224);
+  font-weight: 700;
+}
+
+
+
+@media (max-width: 1000px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: 50%;
+    height: 280px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .informations {
+    width: 100%;
+    align-self: center;
+    margin: 0%;
+  }
+
+  .informations-container {
+    width: 100%;
+  }
+
+  .contact-information {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 850px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .presentation-container {
+    width: auto;
+    height: auto;
+    position: initial;
+  }
+
+  .carousel-container {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .img-group {
+    height: 180px;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  .img-group-div {
+    justify-content: center;
+  }
+
+  .img-group-div-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+ }
+
+  .carousel-caption h1 {
+    backdrop-filter: blur(2px) saturate(165%);
+    -webkit-backdrop-filter: blur(2px) saturate(165%);
+    background-color: rgba(64, 64, 64, 0.41);
+    border-radius: 12px;
+    border: 1px solid rgba(146, 229, 248, 0.3);
+    width: 250px;
+    padding: 8px;
+    overflow: hidden;
+    font-size: 2em;
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 500px) {
+  img.card-img.mb-4 {
+    height: 130px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+ }
+
+  .carousel-caption h1 {
+    backdrop-filter: blur(2px) saturate(165%);
+    -webkit-backdrop-filter: blur(2px) saturate(165%);
+    background-color: rgba(64, 64, 64, 0.41);
+    border-radius: 12px;
+    border: 1px solid rgba(146, 229, 248, 0.3);
+    width: 250px;
+    padding: 8px;
+    overflow: hidden;
+    font-size: 2em;
+    font-family: 'Montserrat';
+    font-weight: 300;
   }
 }

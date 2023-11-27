@@ -52,30 +52,50 @@
   </div>
 
   <div class="container-info">
-    <div class="informations">
-      <div class="conversation mb-2">
-        <p>Une Approche Pédagogique Interactive avec une méthode d'enseignement <span class="mesure">Interactive</span> et <span class="mesure">immersive</span>, favorisant l'apprentissage pratique de la langue anglaise. Les activités ludiques, les jeux de rôles et les <span class="mesure">mises en situation</span> sont privilégiés pour développer vos compétences linguistiques de manière dynamique.</p>
-      </div>
-      <div class="img-group-div mb-2">
-        <%= image_tag("groupetravail.jpg", class: "img-group") %>
-      </div>
-      <div class="academic mb-2"></div>
-        <p>Avec un enseignant fort d'une expertise académique qui reflète dix années d'expérience en tant qu'enseignant, c'est un savoir-faire pédagogique qui vous est proposé et  qui garantit un enseignement de qualité, adapté à vos objectifs spécifiques.</p>
-        <div class="img-group mb-2">
-          <%= image_tag("basketballcourt.jpg", class: "img-group") %>
+    <div class="informations-container">
+      <div class="informations">
+        <div class="conversation mb-3">
+          <p>Une Approche Pédagogique Interactive avec une méthode d'enseignement <span class="mesure">Interactive</span> et <span class="mesure">immersive</span>, favorisant l'apprentissage pratique de la langue anglaise. Les activités ludiques, les jeux de rôles et les <span class="mesure">mises en situation</span> sont privilégiés pour développer vos compétences linguistiques de manière dynamique.</p>
         </div>
-      <div class="basket-class mb-4">
-        <p>Entraineur diplômé de basket depuis plus de 15 ans, il vous est aussi proposé d'optimiser vos <span class="mesure">performances sportives</span> tout en renforçant votre niveau d'anglais pour les passionnés de basketball. Maîtriser l'anglais ouvre les portes à des opportunités <span class="mesure">internationales</span> : communiquez efficacement avec des équipes et des entraîneurs étrangers et vous pourrez saisir des opportunités au delà de vos frontières!</p>
-      </div>
+        <div class="img-group-div mb-3">
+          <%= image_tag("groupetravail.jpg", class: "img-group") %>
+        </div>
+        <div class="academic mb-3"></div>
+          <p>Avec un enseignant fort d'une expertise académique qui reflète dix années d'expérience en tant qu'enseignant, c'est un savoir-faire pédagogique qui vous est proposé et  qui garantit un enseignement de qualité, adapté à vos objectifs spécifiques.</p>
+          <div class="img-group-div-2 mb-3">
+            <%= image_tag("basketballcourt.jpg", class: "img-group") %>
+          </div>
+        <div class="basket-class">
+          <p>Entraineur diplômé de basket depuis plus de 15 ans, il vous est aussi proposé d'optimiser vos <span class="mesure">performances sportives</span> tout en renforçant votre niveau d'anglais pour les passionnés de basketball. Maîtriser l'anglais ouvre les portes à des opportunités <span class="mesure">internationales</span> : communiquez efficacement avec des équipes et des entraîneurs étrangers et vous pourrez saisir des opportunités au delà de vos frontières!</p>
+        </div>
 
-      <div class="offres text-center">
-        <h1>Les Cours</h1>
-        <div class="offre">
-          <h2 class="mb-3">Offre 1 : Immersion au Coeur de la Langue</h2>
-          <%= image_tag("smallgroupclass.jpg", class: "card-img mb-3") %>
-          <p class="mb-3">1. <b>Cours de Conversation Intensive :</b> Mettre l'accent sur la fluidité, la confiance et l'aisance à l'oral.</p>
-          <p class="mb-3">2. <b>Cours de Communication Professionnelle :</b> Axés sur les compétences requises dans un cadre professionnel, comme la rédaction d'e-mails, la présentation orale, etc.</p>
-          <p>3. <b>Mises en Situation Réelles :</b> Des exercices pratiques pour permettre aux apprenants de mettre en pratique leurs compétences dans des contextes authentiques, quels qu'ils soient.</p>
+        <div class="offres">
+          <h1 class="mb-5 mt-5 text-center">Les Cours</h1>
+          <div class="offres-container">
+            <div class="offre mb-3">
+              <h2 class="mb-4 card-title">Offre 1 : Immersion au Coeur de la Langue</h2>
+              <%= image_tag("smallgroupclass.jpg", class: "card-img mb-4") %>
+              <p class="mb-3">1. <span class="bold-characters">Cours de Conversation Intensive :</span> Mettre l'accent sur la fluidité, la confiance et l'aisance à l'oral.</p>
+              <p class="mb-3">2. <span class="bold-characters">Cours de Communication Professionnelle :</span> Axés sur les compétences requises dans un cadre professionnel, comme la rédaction d'e-mails, la présentation orale, etc.</p>
+              <p class="mb-3">3. <span class="bold-characters">Mises en Situation Réelles :</span> Des exercices pratiques pour permettre aux apprenants de mettre en pratique leurs compétences dans des contextes authentiques, quels qu'ils soient.</p>
+            </div>
+
+            <div class="offre mb-3">
+              <h2 class="mb-4 card-title">Offre 2 : Méthode de l'Anglais Scolaire</h2>
+              <%= image_tag("conversationblue.jpg", class: "card-img mb-4") %>
+              <p class="mb-3"><span class="bold-characters"> 1. Préparation au Baccalauréat :</span> Des cours spécifiques pour aider les lycéens à se préparer aux épreuves écrites et orales de l'examen.</p>
+              <p class="mb-3"><span class="bold-characters"> 2. Correction de Mémoires et Préparation aux Soutenances :</span> Aider les étudiants universitaires à améliorer leurs travaux écrits et à se préparer à défendre leurs mémoires devant un jury.</p>
+              <p class="mb-3"><span class="bold-characters"> 3. Accompagnement :</span> Un suivi qui vise à consolider les compétences linguistiques de l'élève, à améliorer sa compréhension de la grammaire, de la lecture et de l'écriture, tout en le préparant efficacement aux examens scolaires.</p>
+            </div>
+
+            <div class="offre mb-3">
+              <h2 class="mb-4 card-title">Offre 3 : L'anglais et le basketball</h2>
+              <%= image_tag("basketballblue.jpg", class: "card-img mb-4") %>
+              <p class="mb-3"><span class="bold-characters"> 1. Pour les particuliers:</span> Des séances de basket en anglais pour une immersion totale, combinant l'amélioration du jeu et l'apprentissage de l'anglais de manière interactive et pragmatique.</p>
+              <p class="mb-3"><span class="bold-characters"> 2. Pour les camps de basket:</span> La possibilité de proposer des séances en anglais par un coach diplômé dans les deux domaines avec une expérience de coaching à l'étranger.</p>
+              <p class="mb-3"><span class="bold-characters"> 3. Pour les centres de formation:</span> Intégrer l'apprentissage de l'anglais tout en renforçant la culture basket et en mettant l'accent sur la vie du sportif en anglais. (séance de Kiné, mettre des mots sur la douleur, lire un contrat, négociation en anglais, instructions et vocabulaire spécifique etc...)</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
