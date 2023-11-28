@@ -3,7 +3,7 @@
     <li class="nav-link"><%= link_to "Home", root_path %></li>
     <li class="nav-link"><%= link_to "About", web_path %></li>
     <li class="nav-link"><%= link_to "English is Facile", english_path %></li>
-    <li class="nav-link"><%= link_to "Projet Web", projet_web_path %></li>
+    <li class="nav-link"><%= link_to "Projet Web", projet_web_path, data: { turbo: false } %></li>
     <li class="nav-link"><%= link_to "Contact",  new_contact_form_path %></li>
   </ul>
 </nav>

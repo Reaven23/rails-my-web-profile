@@ -14,6 +14,9 @@ class TextScramble {
     this.chars = '!<>-_\\/[]{}—=+*^?#________'
     this.update = this.update.bind(this)
   }
+
+
+
   setText(newText) {
     const oldText = this.el.innerText
     const length = Math.max(oldText.length, newText.length)
@@ -80,10 +83,35 @@ const phrases = [
   'Cliquez-moi dessus, et contactez-moi.'
 ]
 
+const hello = [
+  'Hello',
+  'Hi',
+  'Bonjour',
+  'Hello World',
+  'Guten Tag',
+  'Holà',
+  'ní zǎo',
+  'Dobro jutro',
+  'Kaliméra',
+  'dhaoibh ',
+  'Ohayō gozaimasu',
+  'Sabah el kheir',
+  'Habari ya asubuhi',
+  'Chào',
+  'Buongiorno'
+]
+
+const hop = document.querySelector('.hello')
+const hoped = new TextScramble(hop)
+
 const el = document.querySelector('.text')
 const fx = new TextScramble(el)
 
+
+
 let counter = 0
+let newCounter = 0
+
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
     setTimeout(next, 900)
@@ -91,4 +119,12 @@ const next = () => {
   counter = (counter + 1) % phrases.length
 }
 
+const nextF = () => {
+  hoped.setText(hello[newCounter]).then(() => {
+    setTimeout(nextF, 500)
+  })
+  newCounter = (newCounter + 1) % hello.length
+}
+
 next()
+nextF()
