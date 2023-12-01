@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "projet_web", to: "pages#projet_web"
   get "english", to: "pages#english"
   get "contact", to: "pages#contact"
-  
+  get '/telecharger-cv', to: 'cvchargers#telecharger_cv', as: 'telecharger_cv'
+
   resources :contact_form, only: %i[new create]
 end
