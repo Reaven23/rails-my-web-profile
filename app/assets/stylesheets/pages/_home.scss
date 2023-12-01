@@ -5,6 +5,13 @@
   background-size: cover;
 }
 
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .landing-div {
+    height: calc(100vh - 50px);
+  }
+}
+
 .container-landing {
   display:flex;
   flex-direction: column;
@@ -87,11 +94,13 @@
 @media (max-width: 500px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .welcome  {
-    margin-top: 1rem;
+    margin-top: 2rem;
+
   }
 
   .welcome h1 {
     font-size: 24px;
+
   }
 
   .welcome h4 {
@@ -100,6 +109,7 @@
 
   .welcome p {
     font-size: 10px;
+    display: none;
   }
 }
 
@@ -129,10 +139,10 @@
 @media (max-width: 500px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .services-container {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr;
-  margin-top: 3rem;
-  gap: 26px;
+  margin-top: 2rem;
+  gap: 12px;
   place-self: center;
   }
 }
