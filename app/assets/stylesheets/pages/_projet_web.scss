@@ -24,7 +24,7 @@
  }
 
 .dud {
-  color: #757575;
+  color: #06befc;
 }
 
 .about-myself {
@@ -48,12 +48,12 @@
   font-weight: 100;
 }
 
-.project-container {
-  background-color: #c9cbd1;
-  padding: 5rem 2rem;
-  font-family: 'Montserrat';
-  color: #FAFAFA;
-}
+
+
+
+
+
+
 
 
 /*##### RESUME SECTION #####*/
@@ -116,4 +116,51 @@
       }
     }
   }
+}
+
+
+
+///////////////////////////PROJECTS////////////////////////////////
+
+
+.project-container-1 {
+  background-color: #c9cbd1;
+  padding: 5rem 2rem;
+  font-family: 'Montserrat';
+  color: #FAFAFA;
+}
+
+.carousel-item {
+  max-height: 400px;
+  width: auto;
+  margin: auto;
+}
+
+
+.carousel-item img.img-project {
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Ensure block-level display for proper alignment */
+}
+
+.project-title {
+  font-weight: 200;
+  font-size: 46px;
+  color: #323232;
+  text-align: center;
+  font-family: 'Montserrat';
+  transition: color 0.3s, font-size 0.3s; /* Ajout d'une transition fluide */
+}
+
+.project-title:hover {
+  color: #06befc; /* Nouvelle couleur au survol */
+  font-size: 50px; /* Nouvelle taille de police au survol */
+}
+
+.project-container-2 {
+  background-color: #F1F1F1;
+  padding: 5rem 2rem;
+  font-family: 'Montserrat';
+  color: #FAFAFA;
 }
