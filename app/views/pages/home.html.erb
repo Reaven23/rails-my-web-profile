@@ -9,7 +9,7 @@
       </div>
       <div class="services-container">
         <div class="card-services">
-        <%= link_to projet_web_path, class: "card-link" do %>
+        <%= link_to projet_web_path, class: "card-link", data: { turbo: false } do %>
           <div class="icon"><i class="fa-solid fa-computer fa-beat fa-lg" style="color: #06befc;"></i></div>
           <div class="service-title"><h2>Développement Web</h2></div>
           <div class="service-description"><p>Projet web complet, ajout de features, maintenance ou encore développement shopify. </p></div>
@@ -33,4 +33,3 @@
     </div>
   </div>
 </div>
-
