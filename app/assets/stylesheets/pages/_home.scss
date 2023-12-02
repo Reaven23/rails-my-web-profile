@@ -94,7 +94,7 @@
 @media (max-width: 500px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .welcome  {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
   }
 
@@ -105,6 +105,7 @@
 
   .welcome h4 {
     font-size: 14px;
+    margin-bottom: 1rem;
   }
 
   .welcome p {
@@ -115,6 +116,12 @@
 
 .welcome h4 {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .welcome h4 {
+    margin-bottom: 1rem;
+  }
 }
 
 .services-container {
@@ -141,7 +148,7 @@
   .services-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 12px;
   place-self: center;
   }
