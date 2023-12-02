@@ -23,6 +23,8 @@
   font-family: 'Montserrat';
  }
 
+
+
 .dud {
   color: #06befc;
 }
@@ -31,6 +33,7 @@
   background-color: #f1f1f1;
   padding: 5rem 2rem
 }
+
 
 .hello {
   font-weight: 200;
@@ -144,6 +147,15 @@
   display: block; /* Ensure block-level display for proper alignment */
 }
 
+@media (max-width: 600px) {
+  .carousel-item img.img-project {
+    max-height: 250px;
+    width: auto;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure block-level display for proper alignment */
+  }
+}
+
 .project-title {
   font-weight: 200;
   font-size: 46px;
@@ -170,4 +182,40 @@
   padding: 5rem 2rem;
   font-family: 'Montserrat';
   color: #FAFAFA;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .text {
+    font-size: 30px;
+  }
+
+  .hello {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: 27px;
+  }
+
+  .hello {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 20px;
+  }
+
+  .hello {
+    font-size: 28px;
+  }
+
+  .quick-presentation {
+    font-size: 17px;
+  }
 }
