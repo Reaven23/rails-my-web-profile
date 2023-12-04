@@ -1,2 +1,0 @@
-class ContactMessage < ApplicationRecord
-end
