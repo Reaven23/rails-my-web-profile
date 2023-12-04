@@ -1,14 +1,11 @@
 <div class="main-container">
    <%= render 'navbar', class:"sticky" %>
-  <%= form_with(model: ContactMessage.new, url: contact_path) do |form| %>
+  <%= form_with(model: ContactMessage.new, url: new_contact_path) do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name %>
 
   <%= form.label :email %>
   <%= form.email_field :email %>
-
-  <%= form.label :object %>
-  <%= form.email_field :object %>
 
   <%= form.label :message %>
   <%= form.text_area :message %>
