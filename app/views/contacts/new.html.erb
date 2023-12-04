@@ -1,5 +1,5 @@
 <div class="main-container">
-   <%= render 'navbar', class:"sticky" %>
+   <%= render 'pages/navbar', class:"sticky" %>
   <%= form_with(model: ContactMessage.new, url: contact_path) do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name %>

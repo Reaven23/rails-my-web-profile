@@ -8,9 +8,6 @@ class PagesController < ApplicationController
   def english
   end
 
-  def contact
-  end
-
   def projet_web
   end
 end
