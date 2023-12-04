@@ -1,15 +1,16 @@
 class Contact < MailForm::Base
+  attribute :object, validate: true
   attribute :name, validate: true
+  attribute :prenom, validate: true
   attribute :email, validate: true
-  attribute :message
-  attribute :object
+  attribute :message, validate: true
 
   def headers
     {
       #this is the subject for the email generated, it can be anything you want
-      subject: "#{object}",
+      subject: "Message d'Ad.andforward",
       to: 'ad.andforward@gmail.com',
-      from: %("#{name}" <#{email}>)
+      from: %("#{name}, #{prenom}" <#{email}>)
     }
   end
 end

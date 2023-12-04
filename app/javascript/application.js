@@ -104,7 +104,7 @@ const hello = [
 const hop = document.querySelector('.hello')
 const hoped = new TextScramble(hop)
 
-const el = document.querySelector('.text')
+const el = document.querySelector('.text-js')
 const fx = new TextScramble(el)
 
 

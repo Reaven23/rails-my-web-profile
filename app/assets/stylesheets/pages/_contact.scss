@@ -1,4 +1,25 @@
-.container-form {
-  display: flex;
-  justify-content: center;
+.form-contact {
+  margin: auto 20%;
+}
+
+.custom-form {
+  font-family: 'Montserrat';
+  font-size: 24px;
+
+}
+
+.custom-form label {
+  color:  #4a4a4a;
+}
+
+.custom-form label:hover {
+  color:  #06befc;
+}
+
+/* Styliser l'étoile des champs obligatoires */
+.custom-form label abbr[title="required"] {
+  color: red; /* Couleur de l'étoile */
+  font-size: 14px; /* Taille de l'étoile */
+  font-weight: bold; /* Poids de la police de l'étoile */
+  font-style: normal; /* Style de la police de l'étoile */
 }

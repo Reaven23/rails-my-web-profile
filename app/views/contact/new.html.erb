@@ -1,12 +1,32 @@
 <div class="main-container">
    <%= render 'pages/navbar', class:"sticky" %>
    <div class="container-form">
-      <%= simple_form_for(Contact.new, url: contact_index_path) do |form| %>
-        <%= form.input :name, label: 'Name', input_html: { class: 'form-control' } %>
-        <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
-        <%= form.input :message, label: 'Message', text: { class: 'form-control', rows: 4 } %>
+      <div class="form-contact">
+      <%= simple_form_for(Contact.new, url: contact_index_path, html: { class: 'custom-form' }) do |form| %>
+        <div class="row">
+          <div class="col-md-6">
+            <%= form.input :name, label: 'Nom', input_html: { class: 'form-control' } %>
+          </div>
+          <div class="col-md-6">
+            <%= form.input :prenom, label: 'Prénom', input_html: { class: 'form-control' } %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
+          </div>
+          <div class="col-md-6">
+            <%= form.input :object, label: 'Objet', input_html: { class: 'form-control' } %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <%= form.input :message, label: 'Message', as: :text, input_html: { class: 'form-control', rows: 6 } %>
+          </div>
+        </div>
 
         <%= form.button :submit, 'Envoyer', class: 'btn btn-primary' %>
       <% end %>
+      </div>
     </div>
 </div>
