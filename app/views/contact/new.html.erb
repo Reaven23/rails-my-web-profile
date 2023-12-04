@@ -1,7 +1,7 @@
 <div class="main-container">
    <%= render 'pages/navbar', class:"sticky" %>
    <div class="container-form">
-      <%= simple_form_for(Contact.new, url: contact_path) do |form| %>
+      <%= simple_form_for(Contact.new, url: contact_index_path) do |form| %>
         <%= form.input :name, label: 'Name', input_html: { class: 'form-control' } %>
         <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
         <%= form.input :message, label: 'Message', text: { class: 'form-control', rows: 4 } %>
