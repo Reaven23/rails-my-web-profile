@@ -53,7 +53,7 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem 'simple_calendar', '~> 3.0', '>= 3.0.2'
-gem "mail_form"
+gem 'mail_form', '~> 1.10', '>= 1.10.1'
 
 
 group :development, :test do
