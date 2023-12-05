@@ -1,7 +1,7 @@
 <div class="main-container">
    <%= render 'pages/navbar', class:"sticky" %>
    <div class="container-form">
-      <div class="form-contact">
+      <div class="form-contact mt-6">
       <%= simple_form_for(Contact.new, url: contact_index_path, html: { class: 'custom-form' }) do |form| %>
         <div class="row">
           <div class="col-md-6">

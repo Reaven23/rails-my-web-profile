@@ -1,5 +1,6 @@
 .form-contact {
   margin: auto 20%;
+  margin-top: 5%;
 }
 
 .custom-form {
@@ -22,4 +23,20 @@
   font-size: 14px; /* Taille de l'étoile */
   font-weight: bold; /* Poids de la police de l'étoile */
   font-style: normal; /* Style de la police de l'étoile */
+}
+
+.custom-form input[type="text"],
+.custom-form input[type="email"],
+.custom-form textarea {
+  /* Styles communs pour les champs input et textarea */
+  border: 1px solid #06befc; /* Bordure des champs */
+  padding: 8px; /* Espacement intérieur */
+  font-size: 18px; /* Taille de la police */
+}
+
+@media (max-width: 650px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .form-contact {
+    margin: auto 5%;
+  }
 }
