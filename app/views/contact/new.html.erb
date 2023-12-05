@@ -16,7 +16,7 @@
             <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
           </div>
           <div class="col-md-6">
-            <%= form.input :object, label: 'Objet', input_html: { class: 'form-control' } %>
+            <%= form.input :object, label: 'Objet', as: :select, collection: ["Cours d'anglais", 'Projet Web', 'Basketball', "Autre"], prompt: 'Sélectionnez un objet', input_html: { class: 'form-control' } %>
           </div>
         </div>
         <div class="row">
@@ -25,7 +25,15 @@
           </div>
         </div>
 
-        <%= form.button :submit, 'Envoyer', class: 'btn btn-primary' %>
+          <div class="button type--C mt-3">
+            <div class="button__line"></div>
+            <div class="button__line"></div>
+            <span><%= form.button :submit, 'Envoyer', class: 'button__text' %></span>
+            <div class="button__drow1"></div>
+            <div class="button__drow2"></div>
+        </div>
+
+
       <% end %>
       </div>
     </div>

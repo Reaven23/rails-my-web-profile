@@ -1,6 +1,6 @@
 .form-contact {
   margin: auto 20%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .custom-form {
@@ -27,11 +27,38 @@
 
 .custom-form input[type="text"],
 .custom-form input[type="email"],
+.custom-form select,
 .custom-form textarea {
   /* Styles communs pour les champs input et textarea */
   border: 1px solid #06befc; /* Bordure des champs */
   padding: 8px; /* Espacement intérieur */
   font-size: 18px; /* Taille de la police */
+}
+
+.custom-form input[type="submit"] {
+  --line_color: #1d1d1d;
+  --back_color: #60e3fd;
+  /* Reprendre tous les styles de .button ici */
+  position: relative;
+  z-index: 0;
+  width: 240px;
+  height: 56px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--line_color);
+  letter-spacing: 2px;
+  transition: all .3s ease;
+  /* ... autres styles ... */
+}
+
+/* Reprendre tous les sélecteurs .button__... ici */
+
+/* Reprendre tous les @keyframes drow1, drow2, etc. ici */
+
+/* Appliquer des styles supplémentaires au bouton submit si nécessaire */
+.custom-form input[type="submit"]:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 @media (max-width: 650px) {
