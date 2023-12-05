@@ -4,6 +4,10 @@ import "controllers"
 import "@popperjs/core"
 import "bootstrap"
 
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.menuItems').classList.toggle('active');
+});
+
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————

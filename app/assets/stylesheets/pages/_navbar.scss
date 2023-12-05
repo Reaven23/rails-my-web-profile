@@ -6,10 +6,9 @@
   z-index: 1
 }
 
-@media (max-width: 500px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
+@media (max-width: 600px) {
   .navbar-flow {
-    height: 50px;
+    height: 40px;
   }
 }
 
@@ -43,13 +42,13 @@
 }
 
 
-@media (max-width: 500px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .menuItems {
-    justify-content: space-around;
-    padding: 0px;
-  }
-}
+// @media (max-width: 500px) {
+//   /* Pour un écran < 960px, cette classe CSS s'applique */
+//   .menuItems {
+//     justify-content: space-around;
+//     padding: 0px;
+//   }
+// }
 
 
 .nav-link a {
@@ -77,18 +76,73 @@
   }
 }
 
-@media (max-width: 500px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .nav-link a {
-    font-size: 10px;
-    font-weight: 300;
-  }
+// @media (max-width: 500px) {
+//   /* Pour un écran < 960px, cette classe CSS s'applique */
+//   .nav-link a {
+//     font-size: 10px;
+//     font-weight: 300;
+//   }
+// }
+
+
+// .nav-link a:hover {
+//   transition: 0.5s;
+//   color: #06befc;
+//   overflow: hidden;
+//   font-size: 27px;
+// }
+
+.menu-toggle {
+  display: none;
 }
 
+.navbar-flow-b {
+  display: none;
+}
 
-.nav-link a:hover {
-  transition: 0.5s;
-  color: #06befc;
-  overflow: hidden;
-  font-size: 27px;
+/* Affichage du menu déroulant lorsque la taille d'écran est inférieure à 500px */
+@media (max-width: 600px) {
+  .navbar-flow-b {
+    display: flex;
+    background-color: #f1f1f1;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 1
+  }
+
+  .navbar-flow {
+    display: none;
+  }
+
+  input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    height: 100%;
+  }
+
+  #dropdownMenuButton1 {
+    border: #8f8f8f;
+  }
+
+  .dropdown-menu {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px !important; /* Taille de la police */
+  }
+
+  .dropdown-item a {
+    color: #333 !important; /* Couleur du texte des liens */
+    text-decoration: none !important; /* Supprimer la soulignement des liens */
+  }
+
+  .dropdown-item a:hover,
+  .dropdown-item a:focus {
+    background-color: #f8f9fa !important; /* Couleur de fond au survol/focus */
+    color: #06befc !important; /* Couleur du texte au survol/focus */
+    text-decoration: none !important; /* Supprimer la soulignement des liens au survol/focus */
+  }
+
 }

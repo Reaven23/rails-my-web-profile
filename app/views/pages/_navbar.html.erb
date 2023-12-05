@@ -1,4 +1,5 @@
 <nav class="navbar-flow ">
+  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
   <ul class="menuItems">
     <li class="nav-link"><%= link_to "Home", root_path %></li>
     <li class="nav-link"><%= link_to "About", web_path %></li>
@@ -6,4 +7,21 @@
     <li class="nav-link"><%= link_to "Projet Web", projet_web_path, data: { turbo: false } %></li>
     <li class="nav-link"><%= link_to "Contact",  new_contact_path %></li>
   </ul>
+</nav>
+
+<nav class="navbar-flow-b">
+  <div class="dropdown">
+    <!-- Utilisation d'une icône pour le bouton du dropdown -->
+    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Contenu du dropdown -->
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li class="dropdown-item"><a href="<%= root_path %>">Home</a></li>
+      <li class="dropdown-item"><a href="<%= web_path %>">About</a></li>
+      <li class="dropdown-item"><a href="<%= english_path %>">English is Facile</a></li>
+      <li class="dropdown-item"><a href="<%= projet_web_path %>" data-turbo="false">Projet Web</a></li>
+      <li class="dropdown-item"><a href="<%= new_contact_path %>">Contact</a></li>
+    </ul>
+  </div>
 </nav>
