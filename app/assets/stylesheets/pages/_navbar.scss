@@ -61,6 +61,13 @@
   text-transform: uppercase;
 }
 
+.nav-link a:hover {
+  transition: 0.5s;
+  color: #06befc;
+  overflow: hidden;
+  font-size: 26px;
+}
+
 @media (max-width: 800px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .nav-link a {
