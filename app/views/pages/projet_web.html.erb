@@ -1,71 +1,73 @@
 
 <%= render 'navbar' %>
-<section class="hero">
-  <div class="background-web">
-  <%= link_to new_contact_path, class: "card-link" do %>
-      <div class="header">
-        <div class="text-js" id="project-text"></div>
+  <section class="hero">
+    <div class="background-web">
+    <%= link_to new_contact_path, class: "card-link" do %>
+        <div class="header">
+          <div class="text-js" id="project-text"></div>
+      </div>
+    <% end %>
     </div>
-  <% end %>
-  </div>
 
-</section>
-<section class="resume">
-  <div class="content">
-    <%= link_to telecharger_cv_path, target: "_blank" do %>
-      <div class="btn-resume">
-        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-        <span>Télécharger mon CV<span>
-      </div>
-     <% end %>
-  </div>
-</section>
-
-<div class="about-myself">
-  <div class="content">
-    <div class="hello"></div>
-    <div class="quick-presentation mt-3"><span class="mesure">Développeur Web</span> reconverti, je continue de travailler sur mes projets <span class="mesure">personnels</span> et <span class="mesure">professionnels</span> pour faire grandir mon expérience et élargir mes champs de compétences dans le domaine du dev. Je travaille actuellement sur une application web qui vise l'industrie du <span class="mesure">jeu</span> et de <span class="mesure">l'évènementiel</span>, Hide or Find, qui s'inspire d'un projet démarré en équipe lors de ma formation au <span class="mesure">Wagon</span>. Je commence également à faire du <span class="mesure">no / low code</span> en délivrant des produits shopify. Dans l'attente de voir ces projets apparaître, vous verrez ici un <span class="mesure">échantillon</span> des projets que j'ai déjà menés.</div>
-  </div>
-</div>
-
-
-<div class="project-container-1 ">
-
-  <div class="project-title mb-3">Hide and Seek</div>
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner d-flex">
-      <div class="carousel-item active">
-        <%= image_tag("1.png", class: "d-block w-100 img-project") %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("2.png", class: "d-block w-100 img-project") %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("3.png", class: "d-block w-100 img-project") %>
-      </div>
-       <div class="carousel-item">
-        <%= image_tag("4.png", class: "d-block w-100 img-project") %>
-      </div>
-       <div class="carousel-item">
-        <%= image_tag("5.png", class: "d-block w-100 img-project") %>
-      </div>
-       <div class="carousel-item">
-        <%= image_tag("6.png", class: "d-block w-100 img-project") %>
-      </div>
-       <div class="carousel-item">
-        <%= image_tag("7.png", class: "d-block w-100 img-project") %>
-      </div>
+  </section>
+  <section class="resume">
+    <div class="content">
+      <%= link_to telecharger_cv_path, target: "_blank" do %>
+        <div class="btn-resume">
+          <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+          <span>Télécharger mon CV<span>
+        </div>
+      <% end %>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  </section>
+
+  <div class="about-myself">
+    <div class="content">
+      <div class="hello"></div>
+      <div class="quick-presentation mt-3"><span class="mesure">Développeur Web</span> reconverti, je continue de travailler sur mes projets <span class="mesure">personnels</span> et <span class="mesure">professionnels</span> pour faire grandir mon expérience et élargir mes champs de compétences dans le domaine du dev. Je travaille actuellement sur une application web qui vise l'industrie du <span class="mesure">jeu</span> et de <span class="mesure">l'évènementiel</span>, Hide or Find, qui s'inspire d'un projet démarré en équipe lors de ma formation au <span class="mesure">Wagon</span>. Je commence également à faire du <span class="mesure">no / low code</span> en délivrant des produits shopify. Dans l'attente de voir ces projets apparaître, vous verrez ici un <span class="mesure">échantillon</span> des projets que j'ai déjà menés.</div>
+    </div>
   </div>
+
+
+  <div class="project-container-1 ">
+
+    <div class="project-title mb-3">Hide and Seek</div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item active">
+          <%= image_tag("1.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("2.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("3.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("4.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("5.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("6.png", class: "d-block w-100 img-project") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("7.png", class: "d-block w-100 img-project") %>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="description-projet">Une application de cache cache en ligne qui repose sur un système de QR codes. Top pour si vous vous ennuyez à la gare avant de prendre un train. ;)</div>
+    <div class="stack-tech">Stack technique: RUBY ON RAILS, HTML, CSS / SCSS, JS, STIMULUS, POSTGRES</div>
   </div>
 
   <div class="project-container-2 ">
@@ -95,6 +97,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div class="description-projet">Un projet de clone d'air BNB fait en formation. Travail sur une marketplace, et ici, n'allez plus jamais seul au mariage de votre ex, rent a friend. :)</div>
+    <div class="stack-tech">Stack technique: RUBY ON RAILS, HTML, CSS / SCSS, JS, STIMULUS, POSTGRES</div>
   </div>
 
  <div class="project-container-3 ">
@@ -124,4 +128,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div class="description-projet">Premier site personnel qui fera à la fois office de portfolio mais aussi de site vitrine pour mon auto-entreprise. C'est un projet qui continuera d'évoluer avec le temps</div>
+    <div class="stack-tech">Stack technique: RUBY ON RAILS, HTML, CSS / SCSS, JS, STIMULUS et VANILLA, POSTGRES</div>
   </div>
