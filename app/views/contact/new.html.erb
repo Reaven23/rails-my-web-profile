@@ -1,3 +1,4 @@
+
 <div class="main-container">
    <%= render 'pages/navbar', class:"sticky" %>
    <div class="container-form">
@@ -16,7 +17,7 @@
             <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
           </div>
           <div class="col-md-6">
-            <%= form.input :object, label: 'Objet', as: :select, collection: ["Cours d'anglais", 'Projet Web', 'Basketball', "Autre"], prompt: 'Sélectionnez un objet', input_html: { class: 'form-control' } %>
+            <%= form.input :object, label: 'Objet', as: :select, collection: ["Cours d'anglais Info", 'Projet Web Info', 'Basketball Info', 'Devis', "Autre"], prompt: 'Sélectionnez un objet', input_html: { class: 'form-control' } %>
           </div>
         </div>
         <div class="row">

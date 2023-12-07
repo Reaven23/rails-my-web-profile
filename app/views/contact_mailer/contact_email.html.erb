@@ -1,0 +1,16 @@
+<!-- views/contact_mailer/contact_email.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nouveau message de contact</title>
+  </head>
+  <body>
+    <h1>Nouveau message de contact reçu :</h1>
+    <p>Objet: <%= @contact_message.object %></p>
+    <p>Nom : <%= @contact_message.name %></p>
+    <p>Prénom : <%= @contact_message.prenom %></p>
+    <p>email: <%= @contact_message.email %></p>
+    <p>message: <%= @contact_message.message %></p>
+    <!-- D'autres champs du formulaire -->
+  </body>
+</html>

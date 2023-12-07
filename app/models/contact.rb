@@ -2,7 +2,7 @@ class Contact < MailForm::Base
   attribute :object, validate: true
   attribute :name, validate: true
   attribute :prenom, validate: true
-  attribute :email, validate: true
+  attribute :email, validate: true, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i, message: "format d'email invalide"}
   attribute :message, validate: true
 
   def headers
