@@ -128,7 +128,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 3rem;
-  gap: 18px;
+  gap: 24px;
   place-self: center;
 }
 
@@ -166,6 +166,18 @@
   padding-top: 14px;
   overflow: hidden;
 }
+
+.card-services:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: -1px -1px 12px 12px rgba(41,215,255,0.33);
+box-shadow: -1px -1px 12px 12px rgba(41,215,255,0.33);
+}
+
+
 
 .card-services h2 {
   font-size: 28px;
