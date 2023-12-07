@@ -75,16 +75,16 @@ class TextScramble {
 
 const phrases = [
   'Mes Projets Webs',
-  'Bon,',
-  'Ce n\'est qu\'un début',
-  'Mais',
-  'Je vous assure:',
-  'More is coming.',
-  'Vous voulez un devis ?',
-  'Ajouter votre projet sur ma liste',
-  'J\'en serais ravi',
-  'Please...',
-  'Cliquez-moi dessus, et contactez-moi.'
+  'Ici',
+  'Vous pourrez trouver',
+  'Mon CV',
+  'Mes projets en cours,',
+  'Même si more are coming',
+  'Je vous invite',
+  'à prendre contact avec moi',
+  'Si vous avez besoin d\'un service web',
+  'Cliquez simplement ici',
+  'Oui oui, juste là'
 ]
 
 const hello = [
