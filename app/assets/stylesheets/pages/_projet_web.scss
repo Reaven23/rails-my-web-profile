@@ -266,3 +266,52 @@ color: #323232;
 font-size: 18px;
 text-align: center;
 }
+
+
+
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-info {
+  margin-left: 20px;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.stack-tech {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
