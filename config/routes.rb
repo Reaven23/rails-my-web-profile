@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get '/telecharger-cv', to: 'cvchargers#telecharger_cv', as: 'telecharger_cv'
   get '/cv-interim', to: 'cvchargers#telecharger_cv_interim', as: 'cv_interim'
 
+  get 'test-api', to: 'pages#test'
+
   resources :contact, only: %i[new create]
 end
