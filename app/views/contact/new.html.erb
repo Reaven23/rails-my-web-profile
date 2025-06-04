@@ -25,6 +25,9 @@
             <%= form.input :message, label: 'Message', as: :text, input_html: { class: 'form-control', rows: 6 } %>
           </div>
         </div>
+        <div class="d-none">
+          <%= form.input :nickname, label: false, input_html: { autocomplete: 'off' } %>
+        </div>
 
           <div class="button type--C mt-3">
             <div class="button__line"></div>
@@ -33,7 +36,6 @@
             <div class="button__drow1"></div>
             <div class="button__drow2"></div>
         </div>
-
 
       <% end %>
       </div>
