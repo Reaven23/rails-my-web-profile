@@ -19,7 +19,6 @@ class Contact < MailForm::Base
 
   def headers
     {
-      #this is the subject for the email generated, it can be anything you want
       subject: "Message d'Ad.andforward",
       to: 'ad.andforward@gmail.com',
       from: %("#{name}, #{prenom}" <#{email}>)
