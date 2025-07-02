@@ -8,7 +8,7 @@ class Contact < MailForm::Base
 
   validate :email_not_blacklisted
 
-  BLACKLISTED_EMAILS = ['ericjonesmyemail@gmail.com', 'zekisuquc419@gmail.com', 'xiceruxuk02@gmail.com', "pazapz@mailbox.in.ua"]
+  BLACKLISTED_EMAILS = ['ericjonesmyemail@gmail.com', 'zekisuquc419@gmail.com', 'xiceruxuk02@gmail.com', "pazapz@mailbox.in.ua", "fiskathr@gmail.com", "cordner.willis@gmail.com", "yawiviseya67@gmail.com", "erica.daily23@gmail.com", "dinanikolskaya99@gmail.com"]
 
   def email_not_blacklisted
     if BLACKLISTED_EMAILS.include?(email.downcase)
