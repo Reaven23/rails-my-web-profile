@@ -2,42 +2,45 @@
 <div class="main-container">
    <%= render 'pages/navbar', class:"sticky" %>
    <div class="container-form">
-      <div class="form-contact mt-6">
-      <%= simple_form_for(Contact.new, url: contact_index_path, html: { class: 'custom-form' }) do |form| %>
-        <div class="row">
-          <div class="col-md-6">
-            <%= form.input :name, label: 'Nom', input_html: { class: 'form-control' } %>
+      <div class="form-contact mt-6" data-controller="captcha">
+        <%= simple_form_for(Contact.new, url: contact_index_path, html: { class: 'custom-form', data: { captcha_target: "form" } }) do |form| %>
+          <div class="row">
+            <div class="col-md-6">
+              <%= form.input :name, label: 'Nom', input_html: { class: 'form-control' } %>
+            </div>
+            <div class="col-md-6">
+              <%= form.input :prenom, label: 'Prénom', input_html: { class: 'form-control' } %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= form.input :prenom, label: 'Prénom', input_html: { class: 'form-control' } %>
+          <div class="row">
+            <div class="col-md-6">
+              <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
+            </div>
+            <div class="col-md-6">
+              <%= form.input :object, label: 'Objet', as: :select, collection: ["Cours d'anglais Info", 'Projet Web Info', 'Basketball Info', 'Devis', "Autre"], prompt: 'Sélectionnez un objet', input_html: { class: 'form-control' } %>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <%= form.input :email, label: 'Email', input_html: { class: 'form-control' } %>
+          <div class="row">
+            <div class="col-md-12">
+              <%= form.input :message, label: 'Message', as: :text, input_html: { class: 'form-control', rows: 6 } %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= form.input :object, label: 'Objet', as: :select, collection: ["Cours d'anglais Info", 'Projet Web Info', 'Basketball Info', 'Devis', "Autre"], prompt: 'Sélectionnez un objet', input_html: { class: 'form-control' } %>
+
+          <div class="d-none">
+            <%= form.input :nickname, label: false, input_html: { autocomplete: 'off' } %>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <%= form.input :message, label: 'Message', as: :text, input_html: { class: 'form-control', rows: 6 } %>
-          </div>
-        </div>
-        <div class="d-none">
-          <%= form.input :nickname, label: false, input_html: { autocomplete: 'off' } %>
-        </div>
 
           <div class="button type--C mt-3">
             <div class="button__line"></div>
             <div class="button__line"></div>
-            <span><%= form.button :submit, 'Envoyer', class: 'button__text' %></span>
+            <span>
+              <%= form.button :submit, 'Envoyer', class: 'button__text', data: { action: "captcha#submit" } %>
+            </span>
             <div class="button__drow1"></div>
             <div class="button__drow2"></div>
         </div>
 
-      <% end %>
+        <% end %>
       </div>
     </div>
 </div>

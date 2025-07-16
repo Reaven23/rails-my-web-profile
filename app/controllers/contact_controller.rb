@@ -4,6 +4,9 @@ class ContactController < ApplicationController
   end
 
   def create
+    # Le CAPTCHA est maintenant géré côté client par Stimulus
+    # Pas besoin de vérification côté serveur car le formulaire n'est soumis que si le CAPTCHA est correct
+
     @contact_message = Contact.new(contact_params)
 
     if @contact_message.valid?
